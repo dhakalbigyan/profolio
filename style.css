@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1E1E1E;
+    color: rgb(236, 14, 25);
+}
+
+header{
+    width: 100%;
+    min-height: 100vh;
+}
+
+header .container nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
+    background: transparent;
+    font-weight: 600;
+}
+
+header .container nav #lol
+     { 
+        color:#f08804 ;
+        font-size: 25px;
+       
+    }
+
+header .container nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 60px;
+}
+
+header .container nav ul li a{
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 18px;
+    position: relative;
+}
+
+header .container nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: salmon;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+header .container nav ul li a:hover::after{
+    width: 100%;
+    transition: 0.6s;
+}
+.home{
+    display: flex;
+}
+
+.container .home .home_1 img{
+    width: 500px;
+    margin: 20px;
+    border: 2px solid #84DCC6;
+    border-radius: 20px;
+    box-shadow: 5px 7px 9px 11px #2d2d2d;
+}
+.container .home .home_2 h1{
+    margin: 150px 0 0 150px;
+    font-size: 60px;
+    position:absolute;
+    color: #6E6A6F;
+}
+
+.home_2 .design{
+    display: flex;
+}
+.home_2 .design .circle{
+    height: 20px;
+    width: 20px;
+    background: #BEE7B8;
+    border-radius: 50%;
+    margin: 85px 0 0 250px;
+
+}
+
+.home_2 .design .line{
+    width: 545px;
+    height: 3px;
+    background: #BEE7B8;
+    position: absolute;
+    margin: 92.5px 0px 0px 254px;
+}
+
+.home .intro p{
+    font-size: 20px;
+    margin: 340px 0px 0px -114px;
+}
+
+/* ------------------------about-------------------- */
+
+#about{
+    padding: 40px 0px;  
+    width: 100%;
+    height: 100vh;
+}
+
+#about .about_row .about_column1 img{
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 30px;
+    border-radius: 30px;
+    box-shadow: 5px 7px 9px 11px #2d2d2d;
+}  
+
+.about_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about_row .about_column2 h1{
+    margin-left: 300px;
+    margin-top: 30px;
+    font-size: 50px;
+    color:#ff004f;
+}
+
+.about_column2 .introduction{
+    width: 500px;
+    height: 400px;
+    border: 2px solid #84DCC6;
+    margin:70px 0 0 200px;
+    border-radius: 20px;
+}
+
+.about_column2 .introduction p{
+    padding: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: cursive;
+}
+
+/* --------------------------------education--------------------- */
+#education{
+    padding: 40px 0; 
+    width: 100%;
+    height: 100vh;
+}
+
+
+.contain_education h1{
+    text-align: center;
+    font-size: 60px;
+    color: #ff004f;
+}
+
+.edu_label{
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contain_education .edu_label .label_1{
+    width: 300px;
+    height: 400px;
+    border: 2px solid #84DCC6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #FF0096;
+}
+.contain_education .edu_label .label_2{
+    width: 300px;
+    height: 400px;
+    border: 2px solid #84DCC6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #FF0096;
+}
+.contain_education .edu_label .label_3{
+    width: 300px;
+    height: 400px;
+    border: 2px solid #84DCC6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #FF0096;
+}
+
+.label_1 #school{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: cursive;
+    font-weight: 700;
+    color: blue;
+}
+.label_1 img{
+    width: 160px;
+    border-radius: 45%;
+    margin-top: 15px;
+    border: 1px solid #a6a6a6;
+}
+
+.label_1 #sub {
+    font-size:18px;
+    margin: 5px;
+    font-weight: 500;
+    color: blue;
+}
+
+.label_1 #gpa{
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+    color: blue;
+}
+
+.label_2 #college{
+    font-size: 18px;
+    margin: 5px;
+    color: green;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.label_2 img{
+    width: 160px;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+.label_2 #course{
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+    color: green;
+}
+
+.label_3 .skill_2{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #84DCC6;
+    border-radius: 50%;
+    margin: 40px 0 0 20px;
+    padding-top: 3px;
+    color: blue;
+}
+.label_3 .skill_1{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #84DCC6;   
+    border-radius: 50%;
+    margin: 40px 0 0 12.5px;
+    padding-top: 3px;
+    color: orange;
+}
+
+
+
+.label_3 #skill_row_1{
+    display: flex;
+}
+
+#skill_row_1 p{
+    font-size: 18px;
+    margin-top: 55px;
+    font-family: cursive;
+    color: chocolate;
+}
+
+.label_3 #skill_row_2{
+    display: flex;
+}
+
+#skill_row_2 p{
+    font-size: 18px;
+    margin-top: 55px;
+    font-family: cursive;
+    color: chocolate;
+}
+
+/* ------------------------------contactme-------------- */
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0 0 0;
+}
+.contact_obj h1{
+    font-size: 60px;
+    text-align: center;
+    color: #ff004f;
+}
+
+.contact_container{
+    display: flex; 
+    justify-content: space-around;   
+}
+
+.contact_container .interact{
+    display: flex;
+    margin-top: 60px;
+
+}
+.interact .head{
+    height: 150px;
+    width: 150px;
+    /*background:url(bigyan.jpg) no-repeat;
+    background-size: 50px;
+    background-position: -75px;*/
+    border: 5px solid rgb(185, 93, 108);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 95px;      
+}
+.head img{
+
+    height: 145px;
+    width: 145px;
+    border-radius: 50%;
+
+
+}
+.interact .body{
+    height: 350px;
+    width: 350px;
+    background:transparent;
+    backdrop-filter: blur (10px);
+    border: 3px solid #84DCC6;
+    border-radius: 5%;
+    margin-top: 85px;
+}
+
+.interact .body h3{
+    margin-top: 80px;
+    text-align: center;
+    font-family: cursive;
+    color: aquamarine;
+}
+
+.body .email {
+    display: flex;
+    justify-content: center ;
+    margin-top: 35px;
+}
+
+.email .email_logo{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #84DCC6;
+    border-radius: 50%;
+}
+
+.email p{
+    text-decoration: underline;
+    color: aquamarine;
+    font-family: cursive;
+}
+.email_logo .bx{
+    margin: 5px 5px 5px 4px;
+    font-size: 30px;
+    color: red;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.links .links_1{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #84DCC6;
+    border-radius: 50%;
+}
+.links .links_2{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #84DCC6;
+    border-radius: 50%;
+}
+.links .links_3{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #84DCC6;
+    border-radius: 50%;
+}
+
+.links_1 .bx{
+    font-size: 30px;
+    margin: 5px 4px 5px 5px;
+}
+.links_2 .bx{
+    font-size: 30px;
+    margin: 5px 4px 5px 5px;
+}
+.links_3 .bx{
+    font-size: 30px;
+    margin: 5px 4px 5px 5px;
+}
+
+.links_1 a {
+    color: #feda75;
+}
+.links_2 a {
+    color: #0762C8;
+}
+.links_3 a {
+    color: #25D366;
+}
+
+
+
+.email p{
+    margin-top: 9px;
+    margin-left: 3px;
+}
+
+.contact_container .message{
+    height: 400px;
+    width: 400px;
+    outline: none;
+    border: none;
+    margin-left: 40px;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+}
+.message .user_input_1{
+    margin-bottom:20px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid #db2114;
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+}
+
+.message #message_1{
+    margin-bottom:20px;
+    height: 160px;
+    border-radius: 15px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid #db2114;
+    padding: 8px;
+    color: black;
+    font-size: 15px;
+}
+
+.message button{
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color:rgba(86, 72, 72, 0.884) ;
+    color: white;
+}
+
+.message button:hover{
+    cursor: pointer;
+   
+}
+
+#contact .copyright{
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 50px;
+    padding-top:50px;
+    color: red;
+}
+
+.copyright .bx{
+    padding-top:3px ;
+}
